@@ -23,6 +23,7 @@ public class ApplicationTest {
 
     @Test
     public void addressBookEmpty() throws Exception {
+
         String url = "/addressbook";
         this.mockMvc.perform(get(url))
                 .andDo(print())
